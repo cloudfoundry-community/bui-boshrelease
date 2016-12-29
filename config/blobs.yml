@@ -1,1 +1,5 @@
---- {}
+---
+bui/bui-linux-amd64.tar.gz:
+  object_id: eb653d7a-c137-4ae0-976f-8359d0e5f1c2
+  sha: 98cd828c1f40a560265b89bf2916ffcdbdc64c42
+  size: 4866591

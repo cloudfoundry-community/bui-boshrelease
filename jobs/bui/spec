@@ -1,0 +1,22 @@
+---
+name: bui
+packages:
+- bui
+templates:
+  bin/ctl: bin/ctl
+  bin/monit_debugger: bin/monit_debugger
+  config/bui.yml.erb: config/bui.yml
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+properties:
+  bui.port:
+    description: "Port that BUI will run on."
+    default: "9304"
+  bui.cookie_secret:
+    description: "secret for cookies"
+    default: "super-secret"
+  bui.bosh_addr:
+    description: "address for bosh"
+    default: "https://127.0.0.1:25555"

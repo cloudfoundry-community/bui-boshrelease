@@ -1,0 +1,7 @@
+set -ex
+
+tar -xzvf bui/bui-linux-amd64.tar.gz
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+cd bui-linux-amd64
+cp bui     ${BOSH_INSTALL_TARGET}/bin
+cp -R ui   ${BOSH_INSTALL_TARGET}/ui

@@ -1,0 +1,5 @@
+check process bui
+  with pidfile /var/vcap/sys/run/bui/bui.pid
+  start program "/var/vcap/jobs/bui/bin/monit_debugger bui_ctl '/var/vcap/jobs/bui/bin/ctl start'"
+  stop program "/var/vcap/jobs/bui/bin/monit_debugger bui_ctl '/var/vcap/jobs/bui/bin/ctl stop'"
+  group vcap
