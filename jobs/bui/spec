@@ -14,6 +14,9 @@ properties:
   bui.port:
     description: "Port that BUI will run on."
     default: "9304"
+  bui.skip_ssl_validation:
+    description: "skip ssl validation"
+    default: true
   bui.cookie_secret:
     description: "secret for cookies"
     default: "super-secret"

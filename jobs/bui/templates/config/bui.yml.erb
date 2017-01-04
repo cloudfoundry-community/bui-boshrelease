@@ -2,6 +2,7 @@ listen_addr: :<%= p('bui.port') %>
 web_root: /var/vcap/packages/bui/ui
 cookie_secret: <%= p('bui.cookie_secret') %>
 bosh_addr: <%= p('bui.bosh_addr') %>
+skip_ssl_validation: <%= p('bui.skip_ssl_validation') %>
 uaa:
   client_id: <%= p('bui.uaa.client_id') %>
   client_secret: <%= p('bui.uaa.client_secret') %>
