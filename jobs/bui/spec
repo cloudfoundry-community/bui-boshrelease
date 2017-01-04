@@ -20,3 +20,9 @@ properties:
   bui.bosh_addr:
     description: "address for bosh"
     default: "https://127.0.0.1:25555"
+  bui.uaa.client_id:
+    description: "client_id for uaa"
+    default: ""
+  bui.uaa.client_secret:
+    description: "client_secret for uaa"
+    default: ""
