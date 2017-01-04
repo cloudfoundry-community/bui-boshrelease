@@ -1,0 +1,20 @@
+---
+packages:
+- name: bui
+  version: 5a65cabaac8ff68d92d88b2dbe595de82e9a9205
+  fingerprint: 5a65cabaac8ff68d92d88b2dbe595de82e9a9205
+  sha1: b51a3ef3afb28aaaf6ee9678b2dc55ed6b726c1a
+  dependencies: []
+jobs:
+- name: bui
+  version: 268b098a61d554e64908b2767bcb7187e5aa6125
+  fingerprint: 268b098a61d554e64908b2767bcb7187e5aa6125
+  sha1: 84735acde155b26bb0da310428aa71f82b542d1f
+license:
+  version: dc1873ca0ad938dba14d8f79c9da19e1c3bb3844
+  fingerprint: dc1873ca0ad938dba14d8f79c9da19e1c3bb3844
+  sha1: e2c954dabfe359b90f78a9e59974b9d0eda5964f
+commit_hash: 761a1a55
+uncommitted_changes: true
+name: bui
+version: 1.0.1
