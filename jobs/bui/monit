@@ -3,3 +3,9 @@ check process bui
   start program "/var/vcap/jobs/bui/bin/monit_debugger bui_ctl '/var/vcap/jobs/bui/bin/ctl start'"
   stop program "/var/vcap/jobs/bui/bin/monit_debugger bui_ctl '/var/vcap/jobs/bui/bin/ctl stop'"
   group vcap
+
+check process caddy
+  with pidfile /var/vcap/sys/run/bui/caddy.pid
+  start program "/var/vcap/jobs/bui/bin/monit_debugger caddy_ctl '/var/vcap/jobs/bui/bin/caddy_ctl start'"
+  stop program "/var/vcap/jobs/bui/bin/monit_debugger caddy_ctl '/var/vcap/jobs/bui/bin/caddy_ctl stop'"
+  group vcap

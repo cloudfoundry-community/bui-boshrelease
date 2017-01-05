@@ -3,3 +3,7 @@ bui/bui-linux-amd64.tar.gz:
   object_id: 6094e272-df53-42b9-a52b-c392d45eff18
   sha: 22ec46de9b8cca49fcc3c8f400c624180fdba529
   size: 4878646
+caddy/caddy_linux_amd64.tar.gz:
+  object_id: 7ebf2f87-2cf6-48c4-9769-9af5e96f0167
+  sha: 916b787d81e0b1d8ee8c4efa2b762c238827e7c3
+  size: 4841372

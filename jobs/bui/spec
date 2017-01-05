@@ -2,17 +2,28 @@
 name: bui
 packages:
 - bui
+- caddy
 templates:
   bin/ctl: bin/ctl
+  bin/caddy_ctl: bin/caddy_ctl
   bin/monit_debugger: bin/monit_debugger
   config/bui.yml.erb: config/bui.yml
+  config/Caddyfile.erb: config/Caddyfile
   data/properties.sh.erb: data/properties.sh
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  ssl/ssl.crt: ssl/ssl.crt
+  ssl/ssl.key: ssl/ssl.key
 
 properties:
+  bui.ssl_crt:
+    description: "cert for ssl"
+  bui.ssl_key:
+    description: "key for ssl"
+  bui.domain:
+    description: "domain for bui"
   bui.port:
-    description: "Port that BUI will run on."
+    description: "port that BUI will run on"
     default: "9304"
   bui.skip_ssl_validation:
     description: "skip ssl validation"

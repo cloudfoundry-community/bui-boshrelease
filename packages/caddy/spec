@@ -1,0 +1,5 @@
+---
+name: caddy
+dependencies: []
+files:
+- caddy/*.tar.gz

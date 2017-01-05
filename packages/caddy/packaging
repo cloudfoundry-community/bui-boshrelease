@@ -1,0 +1,5 @@
+set -ex
+
+tar -xzvf caddy/caddy_linux_amd64.tar.gz
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+cp caddy_linux_amd64     ${BOSH_INSTALL_TARGET}/bin/caddy

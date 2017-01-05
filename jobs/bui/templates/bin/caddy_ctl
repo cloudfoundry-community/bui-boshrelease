@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e # exit immediately if a simple command exits with a non-zero status
+set -u # report the usage of uninitialized variables
+
+# Setup env vars and folders for the webapp_ctl script
+source /var/vcap/jobs/bui/helpers/ctl_setup.sh 'bui' caddy
+case $1 in
+
+  start)
+    pid_guard $PIDFILE $JOB_NAME
+
+    # store pid in $PIDFILE
+    echo $$ > $PIDFILE
+
+    ulimit -n 8192
+    exec /var/vcap/packages/caddy/bin/caddy -conf /var/vcap/jobs/bui/config/Caddyfile \
+         >>$LOG_DIR/$JOB_NAME.log 2>&1
+    ;;
+
+  stop)
+    kill_and_wait $PIDFILE
+
+    ;;
+  *)
+    echo "Usage: bui_ctl {start|stop}"
+
+    ;;
+
+esac
+exit 0

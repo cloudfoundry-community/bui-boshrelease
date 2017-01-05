@@ -1,0 +1,15 @@
+<%= p("bui.domain", spec.address) %>:<%= p("bui.port") %>
+
+<% if p('bui.ssl_crt', nil) && p('bui.ssl_crt', nil) %>
+tls /var/vcap/jobs/bui/ssl/ssl.crt /var/vcap/jobs/bui/ssl/ssl.key
+<% else %>
+tls self_signed
+<% end %>
+
+proxy / localhost:9303 {
+    header_upstream X-Forwarded-Proto {scheme}
+    header_upstream X-Forwarded-Host {host}
+    header_upstream Host {host}
+}
+
+log /var/vcap/sys/log/bui/caddy.access.log
