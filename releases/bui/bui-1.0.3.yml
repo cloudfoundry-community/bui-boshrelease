@@ -1,0 +1,25 @@
+---
+packages:
+- name: bui
+  version: a614ca92f98340a48cd4edee33b611d833acd05c
+  fingerprint: a614ca92f98340a48cd4edee33b611d833acd05c
+  sha1: e6479e5abbd404e279915886fadc6b1bcb9262eb
+  dependencies: []
+- name: caddy
+  version: d7d56485ae904c91c967e8c021f2608ceefe9c04
+  fingerprint: d7d56485ae904c91c967e8c021f2608ceefe9c04
+  sha1: 6db5699a885acf5b2a2af3e9987965a094802fc1
+  dependencies: []
+jobs:
+- name: bui
+  version: 5188a7802abc1e18b960a711e23b45a6cbb041a5
+  fingerprint: 5188a7802abc1e18b960a711e23b45a6cbb041a5
+  sha1: 34cc2612930b306485c9498ee0dd2ab1e03ebb71
+license:
+  version: dc1873ca0ad938dba14d8f79c9da19e1c3bb3844
+  fingerprint: dc1873ca0ad938dba14d8f79c9da19e1c3bb3844
+  sha1: e2c954dabfe359b90f78a9e59974b9d0eda5964f
+commit_hash: a02b783f
+uncommitted_changes: true
+name: bui
+version: 1.0.3
